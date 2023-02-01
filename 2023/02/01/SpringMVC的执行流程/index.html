@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Hexo</title>
+  <title>SpringMVC的执行流程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="SpringMVC的执行流程1.用户发送请求到前端控制器 DispatcherServlet 2.DispatcherServlet收到请求调用HandlerMapping处理器映射器 3.处理器映射器根据请求的URL找到具体的处理器，生成处理器对象以及处理器拦截器一并返回给DispatcherServlet 4.DispatcherServlet通过HandlerAdapter处理器适配器调用处">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringMVC的执行流程">
+<meta property="og:url" content="http://example.com/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="SpringMVC的执行流程1.用户发送请求到前端控制器 DispatcherServlet 2.DispatcherServlet收到请求调用HandlerMapping处理器映射器 3.处理器映射器根据请求的URL找到具体的处理器，生成处理器对象以及处理器拦截器一并返回给DispatcherServlet 4.DispatcherServlet通过HandlerAdapter处理器适配器调用处">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-02-01T10:23:48.000Z">
+<meta property="article:modified_time" content="2023-02-01T10:29:35.458Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,77 +73,62 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-02-01T10:23:48.000Z" itemprop="datePublished">Feb 1</time>
+        <section id="main"><article id="post-SpringMVC的执行流程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2023-02-01T10:23:48.000Z" itemprop="datePublished">2023-02-01</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/">SpringMVC的执行流程</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      SpringMVC的执行流程
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-02-01T10:03:33.000Z" itemprop="datePublished">Feb 1</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/">LZL的博客</a>
-    </h1>
-  
+        <h1 id="SpringMVC的执行流程"><a href="#SpringMVC的执行流程" class="headerlink" title="SpringMVC的执行流程"></a>SpringMVC的执行流程</h1><p>1.用户发送请求到前端控制器 DispatcherServlet</p>
+<p>2.DispatcherServlet收到请求调用HandlerMapping处理器映射器</p>
+<p>3.处理器映射器根据请求的URL找到具体的处理器，生成处理器对象以及处理器拦截器一并返回给DispatcherServlet</p>
+<p>4.DispatcherServlet通过HandlerAdapter处理器适配器调用处理器</p>
+<p>5.执行处理器(Controller，也叫后端控制器)</p>
+<p>6.Controller执行完成返回ModelAndView</p>
+<p>7.HandlerAdapte将Controller执行结果ModelAndView返回给DispatcherServlet</p>
+<p>8.DispatcherServlet将ModelAndView传给ViewReslover视图解析器</p>
+<p>9.DispatcherServlet对View进行渲染视图</p>
+<p>10.DispatcherServlet相应用户</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/01/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-02-01T08:37:56.041Z" itemprop="datePublished">Feb 1</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" data-id="cldlj1it300003497428ebw5z" data-title="SpringMVC的执行流程" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">LZL的博客</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>

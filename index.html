@@ -71,6 +71,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-SpringMVC的执行流程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2023-02-01T10:23:48.000Z" itemprop="datePublished">2023-02-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/">SpringMVC的执行流程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="SpringMVC的执行流程"><a href="#SpringMVC的执行流程" class="headerlink" title="SpringMVC的执行流程"></a>SpringMVC的执行流程</h1><p>1.用户发送请求到前端控制器 DispatcherServlet</p>
+<p>2.DispatcherServlet收到请求调用HandlerMapping处理器映射器</p>
+<p>3.处理器映射器根据请求的URL找到具体的处理器，生成处理器对象以及处理器拦截器一并返回给DispatcherServlet</p>
+<p>4.DispatcherServlet通过HandlerAdapter处理器适配器调用处理器</p>
+<p>5.执行处理器(Controller，也叫后端控制器)</p>
+<p>6.Controller执行完成返回ModelAndView</p>
+<p>7.HandlerAdapte将Controller执行结果ModelAndView返回给DispatcherServlet</p>
+<p>8.DispatcherServlet将ModelAndView传给ViewReslover视图解析器</p>
+<p>9.DispatcherServlet对View进行渲染视图</p>
+<p>10.DispatcherServlet相应用户</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" data-id="cldlj1it300003497428ebw5z" data-title="SpringMVC的执行流程" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-LZL的博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
@@ -190,6 +238,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/">SpringMVC的执行流程</a>
+          </li>
         
           <li>
             <a href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/">LZL的博客</a>
