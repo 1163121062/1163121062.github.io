@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2023 | Hexo</title>
+  <title>Redis过期数据的删除策略是什么？有哪些？ | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2023/index.html">
+  <meta name="description" content="Redis过期删除策略就是我们设置了一个过期时间，当缓存中的数据过期了之后，redis就会把它给移除掉，释放占用的内存空间 删除的策略有,定期删除 惰性删除 过期删除">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Redis过期数据的删除策略是什么？有哪些？">
+<meta property="og:url" content="http://example.com/2021/03/03/Redis%E8%BF%87%E6%9C%9F%E6%95%B0%E6%8D%AE%E7%9A%84%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Redis过期删除策略就是我们设置了一个过期时间，当缓存中的数据过期了之后，redis就会把它给移除掉，释放占用的内存空间 删除的策略有,定期删除 惰性删除 过期删除">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-03T06:21:19.000Z">
+<meta property="article:modified_time" content="2023-02-03T06:23:52.546Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,58 +73,63 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-02-01T10:23:48.000Z" itemprop="datePublished">Feb 1</time>
+        <section id="main"><article id="post-Redis过期数据的删除策略是什么？有哪些？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/03/Redis%E8%BF%87%E6%9C%9F%E6%95%B0%E6%8D%AE%E7%9A%84%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/" class="article-date">
+  <time class="dt-published" datetime="2021-03-03T06:21:19.000Z" itemprop="datePublished">2021-03-03</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/02/01/SpringMVC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/">SpringMVC的执行流程</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Redis过期数据的删除策略是什么？有哪些？
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2023/01/03/Rabbitmq%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81mq%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%80%A7/" class="archive-article-date">
-  <time class="dt-published" datetime="2023-01-03T06:52:55.000Z" itemprop="datePublished">Jan 3</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/01/03/Rabbitmq%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81mq%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%80%A7/">Rabbitmq如何保证mq消息可靠性</a>
-    </h1>
-  
+        <p>Redis过期删除策略就是我们设置了一个过期时间，当缓存中的数据过期了之后，redis就会把它给移除掉，释放占用的内存空间</p>
+<p>删除的策略有,定期删除 惰性删除 过期删除</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/03/03/Redis%E8%BF%87%E6%9C%9F%E6%95%B0%E6%8D%AE%E7%9A%84%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/" data-id="cldo5525b00006w97aou630uz" data-title="Redis过期数据的删除策略是什么？有哪些？" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/02/03/%E5%8F%8C%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          双写一致性如何保证
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">LZL的博客</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>

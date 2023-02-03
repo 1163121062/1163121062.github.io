@@ -119,10 +119,10 @@
 
 
   
-    <article id="post-LZL的博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Rabbitmq如何保证mq消息可靠性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2023-02-01T10:03:33.000Z" itemprop="datePublished">2023-02-01</time>
+    <a href="/2023/01/03/Rabbitmq%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81mq%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%80%A7/" class="article-date">
+  <time class="dt-published" datetime="2023-01-03T06:52:55.000Z" itemprop="datePublished">2023-01-03</time>
 </a>
     
   </div>
@@ -133,7 +133,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/">LZL的博客</a>
+      <a class="p-name article-title" href="/2023/01/03/Rabbitmq%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81mq%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%80%A7/">Rabbitmq如何保证mq消息可靠性</a>
     </h1>
   
 
@@ -141,12 +141,14 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Hello,imLZL</p>
+        <p>1.开启生产者确认机制(保证消息到了MQ)</p>
+<p>2.开启消息持久化机制(保证消息到了MQ不丢)</p>
+<p>3.开启消费者确认机制(保证消费者不丢)</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="cldlibkwh00008097bay0036s" data-title="LZL的博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/01/03/Rabbitmq%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81mq%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%80%A7/" data-id="cldo6kp1u0000u89796dce9nu" data-title="Rabbitmq如何保证mq消息可靠性" class="article-share-link">Share</a>
       
       
       
@@ -158,10 +160,10 @@
 
 
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-resource跟autowired的区别" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/02/01/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-02-01T08:37:56.041Z" itemprop="datePublished">2023-02-01</time>
+    <a href="/2022/07/03/resource%E8%B7%9Fautowired%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
+  <time class="dt-published" datetime="2022-07-03T07:04:33.000Z" itemprop="datePublished">2022-07-03</time>
 </a>
     
   </div>
@@ -172,7 +174,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/02/01/hello-world/">Hello World</a>
+      <a class="p-name article-title" href="/2022/07/03/resource%E8%B7%9Fautowired%E7%9A%84%E5%8C%BA%E5%88%AB/">resource跟autowired的区别</a>
     </h1>
   
 
@@ -180,24 +182,256 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>resource他默认是根据名称来注入的，如果名称m没有找到的话就会根据类型注入</p>
+<p>autowired是根据类型注入的，如果有相同的类型的话他就会根据名称来注入</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/02/01/hello-world/" data-id="cldlf65yg0000iw9785szb896" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/07/03/resource%E8%B7%9Fautowired%E7%9A%84%E5%8C%BA%E5%88%AB/" data-id="cldo6mxdp0000ug9756fv8yxg" data-title="resource跟autowired的区别" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-如何保证消息的幂等性" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/03/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7/" class="article-date">
+  <time class="dt-published" datetime="2022-04-03T06:59:33.000Z" itemprop="datePublished">2022-04-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/03/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7/">如何保证消息的幂等性</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>保证消息的幂等性，就是让消息不被重复消费 </p>
+<p>1.如果这个操作是要操作写入数据库的，我们可以在插入数据库的时候先判断一下数据库里面有没有这条要插入的数据，如果有的话就不进行</p>
+<p>2.如果是要写入redis的话 redis每次都是set 天然幂等</p>
+<p>3.可以吧消息设置一个全局的ID 根据这个ID去redis查一下 ，看看有没有消费过，如果没有被消费过，我们可以吧ID保存到redis</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/03/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7/" data-id="cldo6kp220002u897ft47ewjr" data-title="如何保证消息的幂等性" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Rabbitmq消息模式有哪些？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/03/Rabbitmq%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/" class="article-date">
+  <time class="dt-published" datetime="2022-02-03T06:49:36.000Z" itemprop="datePublished">2022-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/02/03/Rabbitmq%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/">Rabbitmq消息模式有哪些？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Work Queue  工作模式</p>
+<p>Simple Queue 简单模式</p>
+<p>Fanout exchange） 发布订阅模式<br>Direct exchange 路由模式<br>Topic exchange 主题模式</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/02/03/Rabbitmq%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/" data-id="cldo6kp200001u89718rd3wuv" data-title="Rabbitmq消息模式有哪些？" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-什么是缓存雪崩？缓存击穿？缓存穿透？分别如何解决" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/03/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9%EF%BC%9F%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF%EF%BC%9F%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F%EF%BC%9F%E5%88%86%E5%88%AB%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/" class="article-date">
+  <time class="dt-published" datetime="2022-02-03T06:18:07.000Z" itemprop="datePublished">2022-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/02/03/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9%EF%BC%9F%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF%EF%BC%9F%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F%EF%BC%9F%E5%88%86%E5%88%AB%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/">什么是缓存雪崩？缓存击穿？缓存穿透？分别如何解决</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>缓存雪崩就是Redis挂掉了，而且查询量很大导致了数据库压力过大切down机。<br>1.可以使用主从+哨兵<br>2.可以使用RDB+AOP来恢复Redis数据<br>缓存击穿就是缓存中没有数据，但是数据库中有数据，然后缓存中读取不到数据，然后导致请求又都去访问数据库<br>1.设置热点数据不过期<br>2.把数据从数据库添加到缓存<br>缓存穿透大概就是这个数据缓存中跟数据库里都没有，但是又有很多用户访问，这种情况一般就是恶意攻击。<br>1.可以使用布隆过滤器<br>2.可以对用户进行鉴权校验</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/02/03/%E4%BB%80%E4%B9%88%E6%98%AF%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9%EF%BC%9F%E7%BC%93%E5%AD%98%E5%87%BB%E7%A9%BF%EF%BC%9F%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F%EF%BC%9F%E5%88%86%E5%88%AB%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/" data-id="cldo4yog700004c97dncp0wmx" data-title="什么是缓存雪崩？缓存击穿？缓存穿透？分别如何解决" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-双写一致性如何保证" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/02/03/%E5%8F%8C%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81/" class="article-date">
+  <time class="dt-published" datetime="2022-02-03T03:25:19.000Z" itemprop="datePublished">2022-02-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/02/03/%E5%8F%8C%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81/">双写一致性如何保证</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>可以使用延迟双删</p>
+<p>先删除缓存 再更新数据库  延迟一段时间(3-5秒) 再删除缓存</p>
+<p>问题一：为何要延时500毫秒？<br>这是为了我们在第二次删除redis之前能完成数据库的更新操作。<br>假象一下，如果没有第三步操作时，有很大概率，在两次删除redis操作执行完毕之后，数据库的数据还没有更新，此时若有请求访问数据，便会出现我们一开始提到的那个问题。</p>
+<p>问题二: 为何要两次删除redis?<br>如果我们没有第二次删除操作，此时有请求访问数据，有可能是访问的之前未做修改的redis数据，删除操作执行后，redis为空，有请求进来时，便会去访问数据库，此时数据库中的数据已是更新后的数据，保证了数据的一致性。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/02/03/%E5%8F%8C%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81/" data-id="cldo5c5jx0000vc97aktpbpuc" data-title="双写一致性如何保证" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Redis过期数据的删除策略是什么？有哪些？" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/03/03/Redis%E8%BF%87%E6%9C%9F%E6%95%B0%E6%8D%AE%E7%9A%84%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/" class="article-date">
+  <time class="dt-published" datetime="2021-03-03T06:21:19.000Z" itemprop="datePublished">2021-03-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/03/03/Redis%E8%BF%87%E6%9C%9F%E6%95%B0%E6%8D%AE%E7%9A%84%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/">Redis过期数据的删除策略是什么？有哪些？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Redis过期删除策略就是我们设置了一个过期时间，当缓存中的数据过期了之后，redis就会把它给移除掉，释放占用的内存空间</p>
+<p>删除的策略有,定期删除 惰性删除 过期删除</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/03/03/Redis%E8%BF%87%E6%9C%9F%E6%95%B0%E6%8D%AE%E7%9A%84%E5%88%A0%E9%99%A4%E7%AD%96%E7%95%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/" data-id="cldo5525b00006w97aou630uz" data-title="Redis过期数据的删除策略是什么？有哪些？" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-LZL的博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2021-02-01T10:03:33.000Z" itemprop="datePublished">2021-02-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/">LZL的博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Hello</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="cldlibkwh00008097bay0036s" data-title="LZL的博客" class="article-share-link">Share</a>
       
       
       
@@ -227,7 +461,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li></ul>
     </div>
   </div>
 
@@ -244,11 +478,19 @@
           </li>
         
           <li>
-            <a href="/2023/02/01/LZL%E7%9A%84%E5%8D%9A%E5%AE%A2/">LZL的博客</a>
+            <a href="/2023/01/03/Rabbitmq%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81mq%E6%B6%88%E6%81%AF%E5%8F%AF%E9%9D%A0%E6%80%A7/">Rabbitmq如何保证mq消息可靠性</a>
           </li>
         
           <li>
-            <a href="/2023/02/01/hello-world/">Hello World</a>
+            <a href="/2022/07/03/resource%E8%B7%9Fautowired%E7%9A%84%E5%8C%BA%E5%88%AB/">resource跟autowired的区别</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/03/%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7/">如何保证消息的幂等性</a>
+          </li>
+        
+          <li>
+            <a href="/2022/02/03/Rabbitmq%E6%B6%88%E6%81%AF%E6%A8%A1%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/">Rabbitmq消息模式有哪些？</a>
           </li>
         
       </ul>
